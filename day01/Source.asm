@@ -7,7 +7,7 @@ GetLastError PROTO
 .DATA
 file_name BYTE ".\input.txt", 0 ; file name
 file_handle QWORD ?             ; file handle
-buffer BYTE 256 DUP (0)          ; buffer, temp size
+buffer BYTE 256 DUP (0)         ; buffer, temp size
 _ QWORD ?                       ; discard
 
 .CODE
