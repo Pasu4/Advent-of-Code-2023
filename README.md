@@ -1,10 +1,10 @@
 # Advent of Code 2023
 
-I will try to solve as many days as I have the time for in as many different programming languages as I know.
+I will try to solve as many days as I have the time for in as many different programming languages as I know. Execution time is only stated if I can measure it.
 
-| Day | Language
-|----:|:--------
-|   1 | x64 Assembly (MASM)
+| Day | Language            | Execution time
+|----:|:--------------------|---------------:
+|   1 | x64 Assembly (MASM) | &le; 2 ms
 |   2 | 
 |   3 | 
 |   4 | 
