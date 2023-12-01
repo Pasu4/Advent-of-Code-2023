@@ -105,7 +105,7 @@ get_more_input:
 ; Take the next char and see if it is a number
 next_char:
     MOV R11B, [R10]                 ; get next char from buffer
-    CMP R11B, 10                    ; compare to LN
+    CMP R11B, 10                    ; compare to LF
     JE line_done                    ; jump if line is done
     CMP R11B, 13                    ; compare to CR
     JE char_done                    ; skip if it is CR
