@@ -139,7 +139,7 @@ parse_done:
     ; Print to console
     LEA R9, _                       ; 4: discard actual length written
     MOV R8, LENGTHOF out_buffer     ; 3: print as many characters as were read from the file
-    LEA RDX, out_buffer                 ; 2: pointer to buffer to write
+    LEA RDX, out_buffer             ; 2: pointer to buffer to write
     MOV RCX, stdout                 ; 1: output handle
     SUB RSP, 4*8                    ; reserve 4 QWORDs
     CALL WriteConsoleA              ; get output handle
