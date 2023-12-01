@@ -297,7 +297,10 @@ parse_done:
         ADD RDX, '0'                ; number to char
         MOV [R10], DL               ; write to buffer
         DEC R10                     ; next digit to the left
+        CMP RAX, 0                  ; is there no more to convert?
+        JE break_conv_dec
     LOOP conv_dec
+    break_conv_dec:
 
     ; Print to console
     LEA R9, _                       ; 4: discard actual length written
