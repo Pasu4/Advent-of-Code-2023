@@ -109,10 +109,10 @@ next_char:
     JE line_done                    ; jump if line is done
     CMP R11B, 13                    ; compare to CR
     JE char_done                    ; skip if it is CR
-    CMP R11B, '0'                   ; compare to '0'
-    JB is_letter                    ; handle letter if below '0'
     CMP R11B, '9'                   ; compare to '9'
     JA is_letter                    ; handle letter if above '9'
+    CMP R11B, '0'                   ; compare to '0'
+    JB is_letter                    ; handle letter if below '0'
 
     XOR R13, R13                    ; clear length of digit buffer
     SUB R11B, '0'                   ; char to number
