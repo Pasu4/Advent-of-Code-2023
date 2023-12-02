@@ -64,5 +64,5 @@
 
 ###############################################################################
 
-*.l     linguist-language=Lex linguist-detectable
-*.mlog  linguist-language=Mindustry-Logic
+*.l     linguist-language=Lex
+*.mlog  linguist-language=Mindustry-Logic linguist-detectable
