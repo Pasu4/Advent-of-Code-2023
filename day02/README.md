@@ -2,7 +2,7 @@
 
 ## Instructions for running
 
-1. Run `compile.sh` on a Linux (sub-)system. Flex must be installed.
+1. Run `compile.sh` on a Linux (sub-)system. Flex and build-essential must be installed.
 2. Start [Mindustry](https://github.com/Anuken/Mindustry), load a map, place two hyper processors (A and B) and connect them to a cryofluid source.
 3. Place a switch, a memory bank and a message block and connect them to both processors.
 4. Paste first `input0.mlog` into processor A and then `program.mlog` into processor B.
@@ -20,7 +20,7 @@ Processor B will halt until the second input file is loaded, because it waits fo
 
 If the input has less than 50 lines, it cannot be processed by `compile.sh`. Use `compile-example.sh` instead.
 
-1. Run `compile-example.sh` on a Linux (sub-)system. Flex must be installed.
+1. Run `compile-example.sh` on a Linux (sub-)system. Flex and build-essential must be installed.
 2. Start [Mindustry](https://github.com/Anuken/Mindustry), load a map, place two hyper processors (A and B) and connect them to a cryofluid source.
 3. Place a switch, a memory bank and a message block and connect them to both processors.
 4. Paste first `input.mlog` into processor A and then `program.mlog` into processor B.
