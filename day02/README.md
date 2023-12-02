@@ -8,3 +8,5 @@
 4. Paste first `input0.mlog` into processor A and then `program.mlog` into processor B.
 5. Wait until the message block displays "Insert disk 2", then copy `input1.mlog` into processor A.
 6. Read the input from the message block once it appears.
+
+![Screenshot](./screenshot.png)

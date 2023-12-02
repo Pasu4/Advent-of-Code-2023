@@ -5,6 +5,7 @@
 set time @time
 set sumID 0
 set gameNum 0
+set sumPower 0
 
 # Request game
 request:
@@ -17,22 +18,37 @@ requestLoop:
 gameStart:
     set index 0                                 # index of current token
     set possible 1                              # whether the game is still possible
+    set maxRed 0
+    set maxGreen 0
+    set maxBlue 0
     op add gameNum gameNum 1                    # increment game number
 
 gameLoop:
     read count bank1 index                      # read the count of the next cube
     op add index index 1                        # increment index
     jump gameEnd equal count -1                 # is this the end of the game?
-    jump gameLoop equal count -2                # is this the end of a batch?
     jump gameEnd equal count -3                 # is this the last game?
 
     op idiv maxCount count 1000                 # read the max count of cubes for the color
     op mod count count 1000                     # remove prefix of count 
 
+    jump colorRed equal maxCount 12             # if the maximum is 12, the color is red
+    jump colorGreen equal maxCount 13           # if 13, green
+    jump colorBlue equal maxCount 14            # if 14, blue
+colorRed:
+    op max maxRed maxRed count                  # if count is greater, it is the new maximum
+    jump colorDone always
+colorGreen:
+    op max maxGreen maxGreen count
+    jump colorDone always
+colorBlue:
+    op max maxBlue maxBlue count
+
     # print count
     # print "/"
     # print maxCount
     # print "\n"
+colorDone:
     jump gameLoop lessThanEq count maxCount     # if that count is possible, loop until end of batch, game or file
     set possible 0                              # this game is no longer possible
     jump gameLoop always                        # loop until end of batch, game or file
@@ -46,6 +62,10 @@ gameEnd:
     set a gameNum
     op mul a a possible                         # multiply game number with 0 if not possible
     op add sumID sumID a                        # add the current game ID to the sum of game IDs
+
+    op mul maxRed maxRed maxGreen               # multiply red with green
+    op mul maxRed maxRed maxBlue                # multiply that with blue
+    op add sumPower sumPower maxRed             # add to sum of power
     # print "\n"
     # print sumID
     # printflush message1
@@ -57,6 +77,8 @@ fileEnd:
     op sub time @time time                      # calculate difference between start and end time
     print "Sum of possible game IDs: "
     print sumID
+    print "\nSum of powers: "
+    print sumPower
     print "\nExecution time: "
     print time
     print " ms"
