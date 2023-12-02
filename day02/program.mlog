@@ -1,0 +1,64 @@
+# printflush message1
+# wait 5
+
+# Set up variables
+set time @time
+set sumID 0
+set gameNum 0
+
+# Request game
+request:
+    control enabled switch1 1                   # request more data
+
+requestLoop:
+    sensor en switch1 @enabled                  # check if request is completed
+    jump requestLoop notEqual en 0              # wait until request is completed
+
+gameStart:
+    set index 0                                 # index of current token
+    set possible 1                              # whether the game is still possible
+    op add gameNum gameNum 1                    # increment game number
+
+gameLoop:
+    read count bank1 index                      # read the count of the next cube
+    op add index index 1                        # increment index
+    jump gameEnd equal count -1                 # is this the end of the game?
+    jump gameLoop equal count -2                # is this the end of a batch?
+    jump gameEnd equal count -3                 # is this the last game?
+
+    op idiv maxCount count 1000                 # read the max count of cubes for the color
+    op mod count count 1000                     # remove prefix of count 
+
+    # print count
+    # print "/"
+    # print maxCount
+    # print "\n"
+    jump gameLoop lessThanEq count maxCount     # if that count is possible, loop until end of batch, game or file
+    set possible 0                              # this game is no longer possible
+    jump gameLoop always                        # loop until end of batch, game or file
+
+# Game ended and is possible
+gameEnd:
+    # print "Game"
+    # print gameNum
+    # print ": "
+    # print possible
+    set a gameNum
+    op mul a a possible                         # multiply game number with 0 if not possible
+    op add sumID sumID a                        # add the current game ID to the sum of game IDs
+    # print "\n"
+    # print sumID
+    # printflush message1
+    # wait 5
+    jump fileEnd equal count -3                 # is this the last game?
+    jump request always                         # request the next game
+
+fileEnd:
+    op sub time @time time                      # calculate difference between start and end time
+    print "Sum of possible game IDs: "
+    print sumID
+    print "\nExecution time: "
+    print time
+    print " ms"
+    printflush message1
+    stop

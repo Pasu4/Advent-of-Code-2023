@@ -361,3 +361,10 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Day 2
+
+day02/lex.yy.c
+day02/lexer.exe
+day02/input[0-9].txt
+day02/input[0-9].mlog
