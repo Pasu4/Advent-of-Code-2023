@@ -6,7 +6,7 @@ I will try to solve as many days as I have the time for in as many different pro
 |----:|:--------------------------------------------|---------------:
 |   1 | x64 Assembly (MASM)                         | &le; 2 ms
 |   2 | Flex + Mindustry Logic                      | ~ 12.7 s (Depends on how fast you insert disk 2)
-|   3 | |
+|   3 | Flex + Minecraft Functions                  |
 |   4 | |
 |   5 | |
 |   6 | |
