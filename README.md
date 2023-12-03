@@ -3,7 +3,7 @@
 I will try to solve as many days as I have the time for in as many different programming languages as I know. Execution time is only stated if I can measure it.
 
 | Day | Language                                    | Execution time
-|----:|:--------------------------------------------|---------------:
+|----:|:--------------------------------------------|:---------------
 |   1 | x64 Assembly (MASM)                         | &le; 2 ms (Debug mode)
 |   2 | Flex + Mindustry Logic                      | ~ 12.7 s (Depends on how fast you insert disk 2)
 |   3 | |
