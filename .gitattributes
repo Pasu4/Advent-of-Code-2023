@@ -66,3 +66,4 @@
 
 *.l     linguist-language=Lex
 *.mlog  linguist-language=Mindustry-Logic linguist-detectable
+/day03/aoc23_03_pack/data/aoc/functions/input.mcfunction linguist-generated
