@@ -38,6 +38,13 @@
     currentZ++;
 }
 
+"*" {
+    printf("# Gear\n");
+    // printf("setblock ~%d ~-1 ~%d redstone_block\n", currentX, currentZ);
+    printf("summon armor_stand ~%d ~ ~%d {Tags:[\"symbol\", \"gear\"],NoAI:true,CustomName:'\"%s\"',CustomNameVisible:true}\n", currentX, currentZ, yytext);
+    currentX++;
+}
+
 "." {
     currentX++;
 }
@@ -46,7 +53,6 @@
 }
 
 . {
-    // Indicate symbol with a redstone block
     printf("# Symbol: %s\n", yytext);
     // printf("setblock ~%d ~-1 ~%d redstone_block\n", currentX, currentZ);
     printf("summon armor_stand ~%d ~ ~%d {Tags:[\"symbol\"],NoAI:true,CustomName:'\"%s\"',CustomNameVisible:true}\n", currentX, currentZ, yytext);
