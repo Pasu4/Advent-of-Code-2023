@@ -1,0 +1,1010 @@
+	control enabled switch1 0
+	write -1 bank1 0
+
+game1:
+	sensor en switch1 @enabled
+	jump game1 notEqual en true
+	write 12009 bank1 0
+	write 14005 bank1 1
+	write 13006 bank1 2
+	write 12006 bank1 3
+	write 14013 bank1 4
+	write 14002 bank1 5
+	write 13007 bank1 6
+	write 12005 bank1 7
+
+	write -3 bank1 8
+	control enabled switch1 0
+	write -1 bank1 8
+
+game2:
+	sensor en switch1 @enabled
+	jump game2 notEqual en true
+	write 12006 bank1 0
+	write 13002 bank1 1
+	write 14002 bank1 2
+	write 13012 bank1 3
+	write 12011 bank1 4
+	write 14017 bank1 5
+	write 14002 bank1 6
+	write 12010 bank1 7
+	write 13011 bank1 8
+	write 13013 bank1 9
+	write 12017 bank1 10
+	write 14015 bank1 11
+	write 12020 bank1 12
+	write 13003 bank1 13
+	write 14003 bank1 14
+	write 12011 bank1 15
+	write 13001 bank1 16
+
+	write -3 bank1 17
+	control enabled switch1 0
+	write -1 bank1 17
+
+game3:
+	sensor en switch1 @enabled
+	jump game3 notEqual en true
+	write 13020 bank1 0
+	write 14001 bank1 1
+	write 12007 bank1 2
+	write 13020 bank1 3
+	write 14007 bank1 4
+	write 12018 bank1 5
+	write 13008 bank1 6
+	write 14003 bank1 7
+	write 12007 bank1 8
+	write 14006 bank1 9
+	write 13011 bank1 10
+	write 12011 bank1 11
+	write 14006 bank1 12
+	write 13016 bank1 13
+
+	write -3 bank1 14
+	control enabled switch1 0
+	write -1 bank1 14
+
+game4:
+	sensor en switch1 @enabled
+	jump game4 notEqual en true
+	write 14006 bank1 0
+	write 13006 bank1 1
+	write 14002 bank1 2
+	write 13005 bank1 3
+	write 12001 bank1 4
+	write 14009 bank1 5
+	write 12001 bank1 6
+	write 13001 bank1 7
+	write 12001 bank1 8
+	write 13006 bank1 9
+	write 14008 bank1 10
+	write 13004 bank1 11
+	write 12001 bank1 12
+	write 14001 bank1 13
+
+	write -3 bank1 14
+	control enabled switch1 0
+	write -1 bank1 14
+
+game5:
+	sensor en switch1 @enabled
+	jump game5 notEqual en true
+	write 12005 bank1 0
+	write 14004 bank1 1
+	write 13011 bank1 2
+	write 13010 bank1 3
+	write 14003 bank1 4
+	write 12018 bank1 5
+	write 12013 bank1 6
+	write 13013 bank1 7
+	write 14002 bank1 8
+
+	write -3 bank1 9
+	control enabled switch1 0
+	write -1 bank1 9
+
+game6:
+	sensor en switch1 @enabled
+	jump game6 notEqual en true
+	write 14001 bank1 0
+	write 13015 bank1 1
+	write 12007 bank1 2
+	write 14002 bank1 3
+	write 13004 bank1 4
+	write 12001 bank1 5
+	write 14001 bank1 6
+	write 13013 bank1 7
+	write 12011 bank1 8
+	write 14002 bank1 9
+	write 12010 bank1 10
+	write 13009 bank1 11
+
+	write -3 bank1 12
+	control enabled switch1 0
+	write -1 bank1 12
+
+game7:
+	sensor en switch1 @enabled
+	jump game7 notEqual en true
+	write 13008 bank1 0
+	write 14001 bank1 1
+	write 12001 bank1 2
+	write 12002 bank1 3
+	write 13002 bank1 4
+	write 14003 bank1 5
+	write 12002 bank1 6
+	write 14001 bank1 7
+
+	write -3 bank1 8
+	control enabled switch1 0
+	write -1 bank1 8
+
+game8:
+	sensor en switch1 @enabled
+	jump game8 notEqual en true
+	write 13005 bank1 0
+	write 14009 bank1 1
+	write 12002 bank1 2
+	write 13007 bank1 3
+	write 12003 bank1 4
+	write 14001 bank1 5
+	write 14007 bank1 6
+	write 12002 bank1 7
+	write 13001 bank1 8
+	write 14004 bank1 9
+	write 12002 bank1 10
+	write 13014 bank1 11
+	write 12001 bank1 12
+	write 14005 bank1 13
+	write 13012 bank1 14
+	write 13007 bank1 15
+	write 14009 bank1 16
+	write 12003 bank1 17
+
+	write -3 bank1 18
+	control enabled switch1 0
+	write -1 bank1 18
+
+game9:
+	sensor en switch1 @enabled
+	jump game9 notEqual en true
+	write 12011 bank1 0
+	write 14006 bank1 1
+	write 14002 bank1 2
+	write 12008 bank1 3
+	write 13009 bank1 4
+	write 13008 bank1 5
+	write 12013 bank1 6
+	write 14014 bank1 7
+	write 14002 bank1 8
+	write 12007 bank1 9
+	write 13009 bank1 10
+
+	write -3 bank1 11
+	control enabled switch1 0
+	write -1 bank1 11
+
+game10:
+	sensor en switch1 @enabled
+	jump game10 notEqual en true
+	write 12003 bank1 0
+	write 14003 bank1 1
+	write 13004 bank1 2
+	write 12004 bank1 3
+	write 13003 bank1 4
+	write 14002 bank1 5
+	write 12013 bank1 6
+	write 14004 bank1 7
+	write 13003 bank1 8
+	write 14006 bank1 9
+	write 13005 bank1 10
+	write 12008 bank1 11
+	write 12010 bank1 12
+	write 14005 bank1 13
+	write 13003 bank1 14
+
+	write -3 bank1 15
+	control enabled switch1 0
+	write -1 bank1 15
+
+game11:
+	sensor en switch1 @enabled
+	jump game11 notEqual en true
+	write 14008 bank1 0
+	write 13002 bank1 1
+	write 12004 bank1 2
+	write 12002 bank1 3
+	write 14013 bank1 4
+	write 13002 bank1 5
+	write 12007 bank1 6
+	write 13003 bank1 7
+	write 14013 bank1 8
+	write 14008 bank1 9
+	write 12004 bank1 10
+	write 14012 bank1 11
+	write 12006 bank1 12
+	write 14018 bank1 13
+	write 12003 bank1 14
+	write 13001 bank1 15
+
+	write -3 bank1 16
+	control enabled switch1 0
+	write -1 bank1 16
+
+game12:
+	sensor en switch1 @enabled
+	jump game12 notEqual en true
+	write 12015 bank1 0
+	write 14002 bank1 1
+	write 12003 bank1 2
+	write 13005 bank1 3
+	write 14001 bank1 4
+	write 14002 bank1 5
+	write 13003 bank1 6
+	write 12006 bank1 7
+	write 12009 bank1 8
+	write 13004 bank1 9
+	write 14004 bank1 10
+	write 13003 bank1 11
+
+	write -3 bank1 12
+	control enabled switch1 0
+	write -1 bank1 12
+
+game13:
+	sensor en switch1 @enabled
+	jump game13 notEqual en true
+	write 12003 bank1 0
+	write 13003 bank1 1
+	write 14014 bank1 2
+	write 12003 bank1 3
+	write 14014 bank1 4
+	write 13001 bank1 5
+	write 13003 bank1 6
+	write 14004 bank1 7
+	write 14007 bank1 8
+	write 12001 bank1 9
+	write 13004 bank1 10
+
+	write -3 bank1 11
+	control enabled switch1 0
+	write -1 bank1 11
+
+game14:
+	sensor en switch1 @enabled
+	jump game14 notEqual en true
+	write 13001 bank1 0
+	write 12002 bank1 1
+	write 14004 bank1 2
+	write 13003 bank1 3
+	write 14005 bank1 4
+	write 12011 bank1 5
+	write 12012 bank1 6
+	write 13002 bank1 7
+	write 14001 bank1 8
+	write 13003 bank1 9
+	write 12004 bank1 10
+
+	write -3 bank1 11
+	control enabled switch1 0
+	write -1 bank1 11
+
+game15:
+	sensor en switch1 @enabled
+	jump game15 notEqual en true
+	write 12001 bank1 0
+	write 13003 bank1 1
+	write 14004 bank1 2
+	write 12002 bank1 3
+	write 13003 bank1 4
+	write 14002 bank1 5
+	write 13010 bank1 6
+	write 12003 bank1 7
+	write 14003 bank1 8
+	write 12005 bank1 9
+	write 13011 bank1 10
+	write 14003 bank1 11
+
+	write -3 bank1 12
+	control enabled switch1 0
+	write -1 bank1 12
+
+game16:
+	sensor en switch1 @enabled
+	jump game16 notEqual en true
+	write 12005 bank1 0
+	write 14012 bank1 1
+	write 13012 bank1 2
+	write 12008 bank1 3
+	write 14005 bank1 4
+	write 13011 bank1 5
+	write 14005 bank1 6
+	write 12012 bank1 7
+	write 13004 bank1 8
+	write 14010 bank1 9
+	write 12001 bank1 10
+	write 14001 bank1 11
+
+	write -3 bank1 12
+	control enabled switch1 0
+	write -1 bank1 12
+
+game17:
+	sensor en switch1 @enabled
+	jump game17 notEqual en true
+	write 13018 bank1 0
+	write 12015 bank1 1
+	write 14005 bank1 2
+	write 14005 bank1 3
+	write 13004 bank1 4
+	write 12014 bank1 5
+	write 12004 bank1 6
+	write 14007 bank1 7
+	write 13009 bank1 8
+
+	write -3 bank1 9
+	control enabled switch1 0
+	write -1 bank1 9
+
+game18:
+	sensor en switch1 @enabled
+	jump game18 notEqual en true
+	write 12002 bank1 0
+	write 14012 bank1 1
+	write 13002 bank1 2
+	write 14015 bank1 3
+	write 12004 bank1 4
+	write 12014 bank1 5
+	write 12011 bank1 6
+	write 13005 bank1 7
+	write 14005 bank1 8
+
+	write -3 bank1 9
+	control enabled switch1 0
+	write -1 bank1 9
+
+game19:
+	sensor en switch1 @enabled
+	jump game19 notEqual en true
+	write 12004 bank1 0
+	write 14002 bank1 1
+	write 13004 bank1 2
+	write 12005 bank1 3
+	write 13007 bank1 4
+	write 14001 bank1 5
+	write 13001 bank1 6
+	write 12004 bank1 7
+	write 14002 bank1 8
+
+	write -3 bank1 9
+	control enabled switch1 0
+	write -1 bank1 9
+
+game20:
+	sensor en switch1 @enabled
+	jump game20 notEqual en true
+	write 13005 bank1 0
+	write 14001 bank1 1
+	write 14003 bank1 2
+	write 13009 bank1 3
+	write 14014 bank1 4
+	write 13007 bank1 5
+	write 13007 bank1 6
+	write 12001 bank1 7
+	write 14001 bank1 8
+	write 13007 bank1 9
+	write 14002 bank1 10
+
+	write -3 bank1 11
+	control enabled switch1 0
+	write -1 bank1 11
+
+game21:
+	sensor en switch1 @enabled
+	jump game21 notEqual en true
+	write 14006 bank1 0
+	write 13003 bank1 1
+	write 12008 bank1 2
+	write 12009 bank1 3
+	write 13001 bank1 4
+	write 14001 bank1 5
+	write 13004 bank1 6
+	write 12007 bank1 7
+	write 14001 bank1 8
+	write 13001 bank1 9
+	write 12012 bank1 10
+	write 13004 bank1 11
+	write 12009 bank1 12
+	write 14005 bank1 13
+
+	write -3 bank1 14
+	control enabled switch1 0
+	write -1 bank1 14
+
+game22:
+	sensor en switch1 @enabled
+	jump game22 notEqual en true
+	write 12001 bank1 0
+	write 14003 bank1 1
+	write 13002 bank1 2
+	write 13012 bank1 3
+	write 14005 bank1 4
+	write 12001 bank1 5
+	write 13001 bank1 6
+	write 14003 bank1 7
+	write 12003 bank1 8
+	write 12001 bank1 9
+	write 13008 bank1 10
+	write 14002 bank1 11
+
+	write -3 bank1 12
+	control enabled switch1 0
+	write -1 bank1 12
+
+game23:
+	sensor en switch1 @enabled
+	jump game23 notEqual en true
+	write 14002 bank1 0
+	write 12009 bank1 1
+	write 13014 bank1 2
+	write 14007 bank1 3
+	write 12010 bank1 4
+	write 14007 bank1 5
+	write 13007 bank1 6
+	write 12001 bank1 7
+
+	write -3 bank1 8
+	control enabled switch1 0
+	write -1 bank1 8
+
+game24:
+	sensor en switch1 @enabled
+	jump game24 notEqual en true
+	write 12019 bank1 0
+	write 13003 bank1 1
+	write 14007 bank1 2
+	write 13004 bank1 3
+	write 12012 bank1 4
+	write 12014 bank1 5
+	write 13003 bank1 6
+	write 14001 bank1 7
+	write 13003 bank1 8
+	write 12014 bank1 9
+	write 13005 bank1 10
+	write 14007 bank1 11
+	write 12018 bank1 12
+
+	write -3 bank1 13
+	control enabled switch1 0
+	write -1 bank1 13
+
+game25:
+	sensor en switch1 @enabled
+	jump game25 notEqual en true
+	write 12012 bank1 0
+	write 13004 bank1 1
+	write 14003 bank1 2
+	write 14003 bank1 3
+	write 12012 bank1 4
+	write 13011 bank1 5
+	write 12003 bank1 6
+	write 13011 bank1 7
+	write 14002 bank1 8
+
+	write -3 bank1 9
+	control enabled switch1 0
+	write -1 bank1 9
+
+game26:
+	sensor en switch1 @enabled
+	jump game26 notEqual en true
+	write 13011 bank1 0
+	write 12002 bank1 1
+	write 14005 bank1 2
+	write 12004 bank1 3
+	write 13001 bank1 4
+	write 14006 bank1 5
+	write 12003 bank1 6
+	write 12009 bank1 7
+	write 14007 bank1 8
+	write 14001 bank1 9
+	write 12006 bank1 10
+	write 13001 bank1 11
+
+	write -3 bank1 12
+	control enabled switch1 0
+	write -1 bank1 12
+
+game27:
+	sensor en switch1 @enabled
+	jump game27 notEqual en true
+	write 12010 bank1 0
+	write 14008 bank1 1
+	write 13007 bank1 2
+	write 13006 bank1 3
+	write 14007 bank1 4
+	write 12004 bank1 5
+	write 13010 bank1 6
+	write 14009 bank1 7
+	write 12009 bank1 8
+	write 13002 bank1 9
+	write 14001 bank1 10
+	write 14011 bank1 11
+	write 12015 bank1 12
+	write 13009 bank1 13
+
+	write -3 bank1 14
+	control enabled switch1 0
+	write -1 bank1 14
+
+game28:
+	sensor en switch1 @enabled
+	jump game28 notEqual en true
+	write 14003 bank1 0
+	write 12002 bank1 1
+	write 13008 bank1 2
+	write 12003 bank1 3
+	write 13010 bank1 4
+	write 13011 bank1 5
+	write 14001 bank1 6
+	write 14005 bank1 7
+	write 13006 bank1 8
+	write 12007 bank1 9
+	write 14003 bank1 10
+	write 13002 bank1 11
+
+	write -3 bank1 12
+	control enabled switch1 0
+	write -1 bank1 12
+
+game29:
+	sensor en switch1 @enabled
+	jump game29 notEqual en true
+	write 12018 bank1 0
+	write 14001 bank1 1
+	write 12003 bank1 2
+	write 14004 bank1 3
+	write 13007 bank1 4
+	write 14001 bank1 5
+	write 13016 bank1 6
+	write 12002 bank1 7
+	write 14003 bank1 8
+	write 13006 bank1 9
+	write 12015 bank1 10
+	write 12001 bank1 11
+	write 14001 bank1 12
+	write 12017 bank1 13
+	write 13006 bank1 14
+
+	write -3 bank1 15
+	control enabled switch1 0
+	write -1 bank1 15
+
+game30:
+	sensor en switch1 @enabled
+	jump game30 notEqual en true
+	write 12010 bank1 0
+	write 14006 bank1 1
+	write 13013 bank1 2
+	write 13002 bank1 3
+	write 12010 bank1 4
+	write 14004 bank1 5
+	write 12004 bank1 6
+	write 13002 bank1 7
+	write 14002 bank1 8
+
+	write -3 bank1 9
+	control enabled switch1 0
+	write -1 bank1 9
+
+game31:
+	sensor en switch1 @enabled
+	jump game31 notEqual en true
+	write 12005 bank1 0
+	write 13013 bank1 1
+	write 14005 bank1 2
+	write 13005 bank1 3
+	write 14012 bank1 4
+	write 12005 bank1 5
+	write 12005 bank1 6
+	write 13003 bank1 7
+	write 14005 bank1 8
+	write 13002 bank1 9
+	write 12003 bank1 10
+	write 14014 bank1 11
+
+	write -3 bank1 12
+	control enabled switch1 0
+	write -1 bank1 12
+
+game32:
+	sensor en switch1 @enabled
+	jump game32 notEqual en true
+	write 14002 bank1 0
+	write 12014 bank1 1
+	write 13013 bank1 2
+	write 12011 bank1 3
+	write 13003 bank1 4
+	write 14001 bank1 5
+	write 12009 bank1 6
+	write 14002 bank1 7
+	write 13002 bank1 8
+	write 14005 bank1 9
+	write 12003 bank1 10
+	write 13002 bank1 11
+	write 14004 bank1 12
+	write 13008 bank1 13
+	write 12006 bank1 14
+	write 12012 bank1 15
+	write 13004 bank1 16
+	write 14005 bank1 17
+
+	write -3 bank1 18
+	control enabled switch1 0
+	write -1 bank1 18
+
+game33:
+	sensor en switch1 @enabled
+	jump game33 notEqual en true
+	write 13001 bank1 0
+	write 14015 bank1 1
+	write 12001 bank1 2
+	write 14004 bank1 3
+	write 12001 bank1 4
+	write 13001 bank1 5
+	write 14005 bank1 6
+
+	write -3 bank1 7
+	control enabled switch1 0
+	write -1 bank1 7
+
+game34:
+	sensor en switch1 @enabled
+	jump game34 notEqual en true
+	write 13001 bank1 0
+	write 14002 bank1 1
+	write 12003 bank1 2
+	write 12011 bank1 3
+	write 14010 bank1 4
+	write 14006 bank1 5
+	write 12003 bank1 6
+
+	write -3 bank1 7
+	control enabled switch1 0
+	write -1 bank1 7
+
+game35:
+	sensor en switch1 @enabled
+	jump game35 notEqual en true
+	write 14002 bank1 0
+	write 12003 bank1 1
+	write 13001 bank1 2
+	write 13001 bank1 3
+	write 14009 bank1 4
+	write 12008 bank1 5
+	write 14002 bank1 6
+	write 12005 bank1 7
+	write 13002 bank1 8
+	write 12002 bank1 9
+	write 14002 bank1 10
+	write 12001 bank1 11
+	write 14010 bank1 12
+	write 12005 bank1 13
+	write 14009 bank1 14
+
+	write -3 bank1 15
+	control enabled switch1 0
+	write -1 bank1 15
+
+game36:
+	sensor en switch1 @enabled
+	jump game36 notEqual en true
+	write 13008 bank1 0
+	write 12001 bank1 1
+	write 14002 bank1 2
+	write 12007 bank1 3
+	write 13005 bank1 4
+	write 14009 bank1 5
+	write 12001 bank1 6
+	write 13010 bank1 7
+	write 14013 bank1 8
+	write 12001 bank1 9
+	write 13010 bank1 10
+
+	write -3 bank1 11
+	control enabled switch1 0
+	write -1 bank1 11
+
+game37:
+	sensor en switch1 @enabled
+	jump game37 notEqual en true
+	write 13001 bank1 0
+	write 12001 bank1 1
+	write 13002 bank1 2
+	write 12002 bank1 3
+	write 13002 bank1 4
+	write 12006 bank1 5
+	write 12007 bank1 6
+	write 14001 bank1 7
+	write 12002 bank1 8
+
+	write -3 bank1 9
+	control enabled switch1 0
+	write -1 bank1 9
+
+game38:
+	sensor en switch1 @enabled
+	jump game38 notEqual en true
+	write 12008 bank1 0
+	write 13007 bank1 1
+	write 14011 bank1 2
+	write 13006 bank1 3
+	write 14010 bank1 4
+	write 12011 bank1 5
+	write 14013 bank1 6
+	write 13018 bank1 7
+	write 12007 bank1 8
+	write 12002 bank1 9
+	write 14007 bank1 10
+	write 13012 bank1 11
+
+	write -3 bank1 12
+	control enabled switch1 0
+	write -1 bank1 12
+
+game39:
+	sensor en switch1 @enabled
+	jump game39 notEqual en true
+	write 14004 bank1 0
+	write 12008 bank1 1
+	write 14001 bank1 2
+	write 12011 bank1 3
+	write 13002 bank1 4
+	write 13002 bank1 5
+	write 14003 bank1 6
+	write 12012 bank1 7
+	write 12006 bank1 8
+	write 13001 bank1 9
+	write 14009 bank1 10
+	write 12006 bank1 11
+	write 14001 bank1 12
+	write 13001 bank1 13
+
+	write -3 bank1 14
+	control enabled switch1 0
+	write -1 bank1 14
+
+game40:
+	sensor en switch1 @enabled
+	jump game40 notEqual en true
+	write 14002 bank1 0
+	write 12017 bank1 1
+	write 13002 bank1 2
+	write 12004 bank1 3
+	write 13007 bank1 4
+	write 14004 bank1 5
+	write 13001 bank1 6
+	write 12010 bank1 7
+	write 13006 bank1 8
+	write 12002 bank1 9
+	write 12006 bank1 10
+	write 14001 bank1 11
+	write 13004 bank1 12
+	write 13005 bank1 13
+	write 12009 bank1 14
+	write 14004 bank1 15
+
+	write -3 bank1 16
+	control enabled switch1 0
+	write -1 bank1 16
+
+game41:
+	sensor en switch1 @enabled
+	jump game41 notEqual en true
+	write 12001 bank1 0
+	write 14008 bank1 1
+	write 13003 bank1 2
+	write 12005 bank1 3
+	write 14003 bank1 4
+	write 14008 bank1 5
+	write 13001 bank1 6
+	write 12001 bank1 7
+	write 14009 bank1 8
+	write 12005 bank1 9
+	write 14003 bank1 10
+	write 13001 bank1 11
+	write 12004 bank1 12
+	write 14003 bank1 13
+
+	write -3 bank1 14
+	control enabled switch1 0
+	write -1 bank1 14
+
+game42:
+	sensor en switch1 @enabled
+	jump game42 notEqual en true
+	write 13007 bank1 0
+	write 12001 bank1 1
+	write 14010 bank1 2
+	write 14011 bank1 3
+	write 13001 bank1 4
+	write 12001 bank1 5
+	write 14017 bank1 6
+	write 13002 bank1 7
+	write 12001 bank1 8
+	write 13004 bank1 9
+	write 13001 bank1 10
+	write 14003 bank1 11
+	write 14011 bank1 12
+	write 12001 bank1 13
+
+	write -3 bank1 14
+	control enabled switch1 0
+	write -1 bank1 14
+
+game43:
+	sensor en switch1 @enabled
+	jump game43 notEqual en true
+	write 13005 bank1 0
+	write 12001 bank1 1
+	write 14005 bank1 2
+	write 13003 bank1 3
+	write 12014 bank1 4
+	write 13007 bank1 5
+	write 12002 bank1 6
+	write 14011 bank1 7
+	write 12003 bank1 8
+	write 13010 bank1 9
+	write 14004 bank1 10
+	write 13005 bank1 11
+	write 14003 bank1 12
+	write 12009 bank1 13
+	write 13008 bank1 14
+	write 14003 bank1 15
+	write 12002 bank1 16
+
+	write -3 bank1 17
+	control enabled switch1 0
+	write -1 bank1 17
+
+game44:
+	sensor en switch1 @enabled
+	jump game44 notEqual en true
+	write 14010 bank1 0
+	write 12001 bank1 1
+	write 13002 bank1 2
+	write 14005 bank1 3
+	write 13002 bank1 4
+	write 12002 bank1 5
+	write 12002 bank1 6
+	write 13002 bank1 7
+	write 14005 bank1 8
+	write 14007 bank1 9
+	write 12014 bank1 10
+	write 13001 bank1 11
+	write 12001 bank1 12
+	write 13002 bank1 13
+	write 14005 bank1 14
+
+	write -3 bank1 15
+	control enabled switch1 0
+	write -1 bank1 15
+
+game45:
+	sensor en switch1 @enabled
+	jump game45 notEqual en true
+	write 13016 bank1 0
+	write 14011 bank1 1
+	write 12007 bank1 2
+	write 14006 bank1 3
+	write 12008 bank1 4
+	write 13009 bank1 5
+	write 13007 bank1 6
+	write 14008 bank1 7
+	write 12010 bank1 8
+	write 12013 bank1 9
+	write 13015 bank1 10
+	write 14008 bank1 11
+	write 12003 bank1 12
+	write 13012 bank1 13
+
+	write -3 bank1 14
+	control enabled switch1 0
+	write -1 bank1 14
+
+game46:
+	sensor en switch1 @enabled
+	jump game46 notEqual en true
+	write 12007 bank1 0
+	write 13002 bank1 1
+	write 14004 bank1 2
+	write 13003 bank1 3
+	write 14007 bank1 4
+	write 14002 bank1 5
+	write 12005 bank1 6
+	write 13002 bank1 7
+	write 13003 bank1 8
+	write 14008 bank1 9
+	write 12002 bank1 10
+
+	write -3 bank1 11
+	control enabled switch1 0
+	write -1 bank1 11
+
+game47:
+	sensor en switch1 @enabled
+	jump game47 notEqual en true
+	write 14006 bank1 0
+	write 12005 bank1 1
+	write 12005 bank1 2
+	write 13004 bank1 3
+	write 14005 bank1 4
+	write 13004 bank1 5
+	write 12008 bank1 6
+	write 12005 bank1 7
+	write 14004 bank1 8
+	write 13004 bank1 9
+	write 14005 bank1 10
+	write 13005 bank1 11
+	write 12003 bank1 12
+	write 14005 bank1 13
+	write 13002 bank1 14
+	write 12003 bank1 15
+
+	write -3 bank1 16
+	control enabled switch1 0
+	write -1 bank1 16
+
+game48:
+	sensor en switch1 @enabled
+	jump game48 notEqual en true
+	write 14011 bank1 0
+	write 13007 bank1 1
+	write 12002 bank1 2
+	write 12003 bank1 3
+	write 13008 bank1 4
+	write 14001 bank1 5
+	write 12003 bank1 6
+
+	write -3 bank1 7
+	control enabled switch1 0
+	write -1 bank1 7
+
+game49:
+	sensor en switch1 @enabled
+	jump game49 notEqual en true
+	write 14008 bank1 0
+	write 13001 bank1 1
+	write 12003 bank1 2
+	write 14002 bank1 3
+	write 12004 bank1 4
+	write 12006 bank1 5
+	write 13001 bank1 6
+	write 12002 bank1 7
+	write 14010 bank1 8
+	write 13010 bank1 9
+
+	write -3 bank1 10
+	control enabled switch1 0
+	write -1 bank1 10
+
+game50:
+	sensor en switch1 @enabled
+	jump game50 notEqual en true
+	write 12001 bank1 0
+	write 13008 bank1 1
+	write 14001 bank1 2
+	write 12002 bank1 3
+	write 13008 bank1 4
+	write 12007 bank1 5
+	write 14001 bank1 6
+	write 12007 bank1 7
+	write 14001 bank1 8
+	write 13005 bank1 9
+	write 13006 bank1 10
+	write 12003 bank1 11
+
+	write -1 bank1 12
+print "Insert disk 2"
+printflush message1
+stop
